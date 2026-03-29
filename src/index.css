@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top, rgba(56, 189, 248, 0.08), transparent 30%),
+    #08111f;
+  color: #e2e8f0;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: rgba(56, 189, 248, 0.3);
+  color: #f8fafc;
+}
+
+@layer components {
+  .container-shell {
+    @apply mx-auto max-w-7xl px-6 lg:px-8;
+  }
+
+  .section-shell {
+    @apply py-20 sm:py-24;
+  }
+
+  .card-base {
+    @apply rounded-[2rem] border border-white/10 bg-white/5 shadow-soft backdrop-blur-xl;
+  }
+
+  .badge-chip {
+    @apply rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-textMain;
+  }
+
+  .btn-primary {
+    @apply rounded-full border border-accent/30 bg-accent px-6 py-3 text-sm font-semibold text-slatebase transition hover:-translate-y-0.5 hover:bg-sky-300 focus:outline-none focus:ring-2 focus:ring-accent/60 focus:ring-offset-2 focus:ring-offset-slatebase;
+  }
+
+  .btn-secondary {
+    @apply rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-accent/40 focus:ring-offset-2 focus:ring-offset-slatebase;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
