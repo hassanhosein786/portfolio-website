@@ -111,6 +111,7 @@ export const projects = [
     featured: false,
     links: {
       github: 'https://github.com/hassanhosein786/email-detector',
+      demo: 'https://email-detector-phi.vercel.app/analyzer',
       docs: 'https://github.com/hassanhosein786/email-detector#readme',
     },
   },
