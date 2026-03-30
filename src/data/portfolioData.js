@@ -6,7 +6,7 @@ export const profile = {
   email: 'hassanhosein035@gmail.com',
   linkedin: 'https://www.linkedin.com/in/hassan-hosein-65373718b/',
   github: 'https://github.com/hassanhosein786',
-  resumePath: 'https://acrobat.adobe.com/id/urn:aaid:sc:US:1a0f59e3-2998-42ce-b137-3972675673c1',
+  resumePath: '/resume.pdf',
 };
 
 export const navigation = [
