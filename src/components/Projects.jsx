@@ -70,7 +70,7 @@ function ProjectCard({ project }) {
         >
           GitHub
         </a>
-        {!project.featured && project.links.demo && (
+        {project.links.demo && (
           <a
             href={project.links.demo}
             target="_blank"

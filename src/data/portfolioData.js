@@ -91,7 +91,7 @@ export const projects = [
     featured: true,
     links: {
       github: 'https://github.com/hassanhosein786/mini-burp-site',
-      demo: 'https://your-demo-placeholder.com/mini-burp-suite',
+      demo: 'https://mini-burp-suite-web.vercel.app/',
       docs: 'https://your-docs-placeholder.com/mini-burp-suite',
     },
   },
