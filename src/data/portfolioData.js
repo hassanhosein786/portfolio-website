@@ -96,23 +96,22 @@ export const projects = [
     },
   },
   {
-    title: 'Resume Parser System',
-    subtitle: 'AI-Powered Resume Analysis Platform',
+    title: 'AI-Powered Phishing Email Detector',
+    subtitle: 'Full-Stack Email Threat Analysis Platform',
     description:
-      'Developed an AI-assisted resume analysis platform that applies natural language processing and machine learning techniques to evaluate candidate documents. The application focuses on turning raw resume text into more actionable insight through scoring, clustering, and visualization.',
+      'Built a full-stack phishing analysis platform that classifies suspicious emails, generates blended risk scores, explains why messages were flagged, and highlights dangerous language for faster triage. The project combines a polished React frontend with an Express API, MongoDB persistence, and a Python FastAPI microservice running a scikit-learn model.',
     features: [
-      'Resume upload workflow with parsed text extraction',
-      'Scoring dashboard with clear visual summaries',
-      'Downloadable evaluation outputs for review and sharing',
-      'Text preprocessing pipeline for cleaner downstream analysis',
-      'TF-IDF vectorization, KMeans clustering, and cosine similarity scoring',
+      'Email analyzer with optional subject, sender, pasted content, and `.txt` or `.eml` upload support',
+      'Blended scoring engine that combines TF-IDF + Logistic Regression predictions with phishing heuristics',
+      'Plain-English explanations and highlighted indicators such as urgency, credential requests, threats, and suspicious links',
+      'MongoDB-backed history dashboard with search, classification filters, and scan statistics',
+      'Deployment-ready architecture split across Vercel frontend, Render backend, Render ML service, and MongoDB Atlas',
     ],
-    tech: ['Python', 'NLTK', 'scikit-learn', 'Pandas', 'Streamlit'],
+    tech: ['React', 'Vite', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'FastAPI', 'scikit-learn'],
     featured: false,
     links: {
-      github: 'https://github.com/hassanhosein786/resume-parser-system',
-      demo: 'https://resume-parser-system-wsxrjmxjds5a4dggx6fpva.streamlit.app/#resume-parser-system',
-      docs: 'https://acrobat.adobe.com/id/urn:aaid:sc:US:251addb5-7a0c-49cc-820c-7a12c1ac1319 '
+      github: 'https://github.com/hassanhosein786/email-detector',
+      docs: 'https://github.com/hassanhosein786/email-detector#readme',
     },
   },
   {

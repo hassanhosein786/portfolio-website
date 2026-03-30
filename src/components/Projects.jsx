@@ -70,24 +70,31 @@ function ProjectCard({ project }) {
         >
           GitHub
         </a>
-        {!project.featured && (
+        {!project.featured && project.links.demo && (
+          <a
+            href={project.links.demo}
+            target="_blank"
+            rel="noreferrer"
+            className={projectButtonClasses.demo}
+          >
+            Live Demo
+          </a>
+        )}
+        {!project.featured && project.links.docs && (
+          <a
+            href={project.links.docs}
+            target="_blank"
+            rel="noreferrer"
+            className={projectButtonClasses.docs}
+          >
+            {project.links.docsLabel || 'Documentation'}
+          </a>
+        )}
+        {!project.featured && !project.links.demo && !project.links.docs && (
           <>
-            <a
-              href={project.links.demo}
-              target="_blank"
-              rel="noreferrer"
-              className={projectButtonClasses.demo}
-            >
-              Live Demo
-            </a>
-            <a
-              href={project.links.docs}
-              target="_blank"
-              rel="noreferrer"
-              className={projectButtonClasses.docs}
-            >
-              {project.links.docsLabel || 'Documentation'}
-            </a>
+            <span className="rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-textSoft">
+              Deployment in progress
+            </span>
           </>
         )}
       </div>
