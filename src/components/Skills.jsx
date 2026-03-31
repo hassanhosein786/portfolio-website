@@ -9,8 +9,8 @@ function Skills() {
       <div className="container-shell">
         <SectionHeading
           eyebrow="Skills"
-          title="A balanced toolkit across software, platforms, and delivery"
-          description="Grouped to help recruiters quickly scan language fluency, web capabilities, frameworks, and the tooling that supports day-to-day engineering work."
+          title="Technical Skills"
+          description="A cleaner snapshot of the technologies I use most across application development, backend services, databases, and everyday engineering workflows."
         />
 
         <div className="grid gap-6 lg:grid-cols-2">

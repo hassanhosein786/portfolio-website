@@ -36,24 +36,29 @@ export const about = {
 
 export const skillGroups = [
   {
-    title: 'Programming',
+    title: 'Languages',
     icon: 'code',
-    skills: ['Java', 'C#', 'JavaScript', 'Python', 'C++', 'PHP'],
+    skills: ['Java', 'JavaScript', 'Python', 'C#', 'C++', 'PHP'],
   },
   {
-    title: 'Web & Database',
-    icon: 'database',
-    skills: ['HTML', 'CSS', 'MySQL', 'Oracle APEX', 'React', 'Node.js', 'Express.js', 'MongoDB'],
-  },
-  {
-    title: 'Frameworks & Platforms',
+    title: 'Frontend',
     icon: 'layers',
-    skills: ['ASP.NET Core', 'Moodle', 'Streamlit'],
+    skills: ['React', 'Tailwind CSS', 'HTML', 'CSS'],
   },
   {
-    title: 'Tools & Tech',
+    title: 'Backend',
     icon: 'tool',
-    skills: ['Git', 'Visual Studio', 'VS Code', 'Eclipse', 'Docker', 'Linux', 'Selenium', 'Grunt', 'Adminer', 'MailHog', 'Apache', 'MariaDB'],
+    skills: ['Node.js', 'Express.js', 'FastAPI'],
+  },
+  {
+    title: 'Databases',
+    icon: 'database',
+    skills: ['MongoDB', 'MySQL'],
+  },
+  {
+    title: 'Tools & DevOps',
+    icon: 'tool',
+    skills: ['Docker', 'Git', 'Linux', 'Selenium'],
   },
 ];
 
@@ -92,7 +97,7 @@ export const projects = [
     links: {
       github: 'https://github.com/hassanhosein786/mini-burp-site',
       demo: 'https://mini-burp-suite-web.vercel.app/',
-      docs: 'https://your-docs-placeholder.com/mini-burp-suite',
+      docs: 'https://github.com/hassanhosein786/mini-burp-site#readme',
     },
   },
   {
@@ -163,10 +168,12 @@ export const education = [
     ],
   },
   {
-    institution: 'Master of Science in Cybersecurity',
-    credential: 'Postgraduate Study',
+    institution: 'University of Trinidad and Tobago',
+    credential: 'Master of Science in Cybersecurity',
     period: '09/2025 - 12/2026',
-    details: ['Advanced cybersecurity study supporting a long-term software engineering and defensive security career path.'],
+    details: [
+      'Relevant coursework: Computer Security, Advanced Network and Web Security, Cybercrime and Deep Web, Data Protection and Privacy, Digital Forensics and Cybercrime Investigation, Hacking and Penetration Testing.',
+    ],
   },
 ];
 

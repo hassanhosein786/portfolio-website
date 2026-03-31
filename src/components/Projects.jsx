@@ -80,7 +80,7 @@ function ProjectCard({ project }) {
             Live Demo
           </a>
         )}
-        {!project.featured && project.links.docs && (
+        {project.links.docs && (
           <a
             href={project.links.docs}
             target="_blank"
