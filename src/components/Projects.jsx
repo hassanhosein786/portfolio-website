@@ -112,6 +112,7 @@ function Projects() {
         <SectionHeading
           eyebrow="Projects"
           title="Strong projects with clear engineering and security value"
+          inlineNote="Live demos may take a few minutes to wake up, so some features may be temporarily unavailable or briefly throw an error at first."
           description="The portfolio is intentionally project-led so recruiters can quickly see technical range, product thinking, and practical execution."
         />
 
