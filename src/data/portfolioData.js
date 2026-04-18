@@ -19,7 +19,7 @@ export const navigation = [
 ];
 
 export const heroStats = [
-  { value: '3', label: 'Major Portfolio Projects' },
+  { value: '4', label: 'Major Portfolio Projects' },
   { value: '2026', label: 'Cybersecurity MSc Track' },
   { value: 'Moodle 4', label: 'Legacy Modernization Focus' },
 ];
