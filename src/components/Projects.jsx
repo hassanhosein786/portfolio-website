@@ -90,13 +90,6 @@ function ProjectCard({ project }) {
             {project.links.docsLabel || 'Documentation'}
           </a>
         )}
-        {!project.featured && !project.links.demo && !project.links.docs && (
-          <>
-            <span className="rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-textSoft">
-              Deployment in progress
-            </span>
-          </>
-        )}
       </div>
     </article>
   );

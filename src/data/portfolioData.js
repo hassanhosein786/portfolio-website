@@ -121,6 +121,24 @@ export const projects = [
     },
   },
   {
+    title: 'Banking System',
+    subtitle: 'Production-Grade Core Banking Backend',
+    description:
+      'Built a production-style core banking backend with Java 17 and Spring Boot, focused on secure API design, transaction integrity, and role-based access control. The system models key banking workflows through a layered architecture that supports authentication, account management, and transactional operations.',
+    features: [
+      'JWT-based authentication and role-based access control for user and admin workflows',
+      'Atomic deposit, withdrawal, and transfer operations with transaction-focused business logic',
+      'Optimistic locking on accounts to support safer concurrent balance updates',
+      'Transaction history and audit-oriented backend design',
+      'Swagger and OpenAPI documentation plus H2 local development support',
+    ],
+    tech: ['Java 17', 'Spring Boot', 'Spring Data JPA', 'Spring Security', 'PostgreSQL', 'H2', 'JWT', 'Maven'],
+    featured: false,
+    links: {
+      github: 'https://github.com/hassanhosein786/banking-system',
+    },
+  },
+  {
     title: 'Dental Clinic Management System',
     subtitle: 'Full-Stack MERN Healthcare Management App',
     description:
