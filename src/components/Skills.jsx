@@ -4,6 +4,8 @@ import Reveal from './Reveal';
 import SectionHeading from './SectionHeading';
 
 function Skills() {
+  const hasOddCount = skillGroups.length % 2 === 1;
+
   return (
     <section id="skills" className="section-shell">
       <div className="container-shell">
@@ -14,8 +16,15 @@ function Skills() {
         />
 
         <div className="grid gap-6 lg:grid-cols-2">
-          {skillGroups.map((group) => (
-            <Reveal key={group.title}>
+          {skillGroups.map((group, index) => (
+            <Reveal
+              key={group.title}
+              className={
+                hasOddCount && index === skillGroups.length - 1
+                  ? 'lg:col-span-2 lg:mx-auto lg:w-[calc(50%-0.75rem)]'
+                  : ''
+              }
+            >
               <article className="card-base h-full p-7">
                 <div className="flex items-center gap-4">
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-accent/10 text-accent">

@@ -48,17 +48,17 @@ export const skillGroups = [
   {
     title: 'Backend',
     icon: 'tool',
-    skills: ['Node.js', 'Express.js', 'FastAPI'],
+    skills: ['Node.js', 'Express.js', 'FastAPI', 'Spring Boot', 'Spring Security', 'Spring Data JPA', 'JWT'],
   },
   {
     title: 'Databases',
     icon: 'database',
-    skills: ['MongoDB', 'MySQL'],
+    skills: ['MongoDB', 'MySQL', 'PostgreSQL', 'H2'],
   },
   {
     title: 'Tools & DevOps',
     icon: 'tool',
-    skills: ['Docker', 'Git', 'Linux', 'Selenium'],
+    skills: ['Docker', 'Git', 'Linux', 'Selenium', 'Maven'],
   },
 ];
 
@@ -136,6 +136,7 @@ export const projects = [
     featured: false,
     links: {
       github: 'https://github.com/hassanhosein786/banking-system',
+      docs: 'https://github.com/hassanhosein786/banking-system#readme',
     },
   },
   {

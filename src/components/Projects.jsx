@@ -98,6 +98,7 @@ function ProjectCard({ project }) {
 function Projects() {
   const featuredProject = projects.find((project) => project.featured);
   const otherProjects = projects.filter((project) => !project.featured);
+  const hasOddCount = otherProjects.length % 2 === 1;
 
   return (
     <section id="projects" className="section-shell">
@@ -116,8 +117,15 @@ function Projects() {
         )}
 
         <div className="grid gap-6 lg:grid-cols-2">
-          {otherProjects.map((project) => (
-            <Reveal key={project.title}>
+          {otherProjects.map((project, index) => (
+            <Reveal
+              key={project.title}
+              className={
+                hasOddCount && index === otherProjects.length - 1
+                  ? 'lg:col-span-2 lg:mx-auto lg:w-[calc(50%-0.75rem)]'
+                  : ''
+              }
+            >
               <ProjectCard project={project} />
             </Reveal>
           ))}
