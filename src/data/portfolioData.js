@@ -19,7 +19,7 @@ export const navigation = [
 ];
 
 export const heroStats = [
-  { value: '4', label: 'Major Portfolio Projects' },
+  { value: '5', label: 'Major Portfolio Projects' },
   { value: '2026', label: 'Cybersecurity MSc Track' },
   { value: 'Moodle 4', label: 'Legacy Modernization Focus' },
 ];
@@ -58,7 +58,7 @@ export const skillGroups = [
   {
     title: 'Tools & DevOps',
     icon: 'tool',
-    skills: ['Docker', 'Git', 'Linux', 'Selenium', 'Maven'],
+    skills: ['Docker', 'Git', 'Linux', 'Selenium', 'Maven', 'scikit-learn'],
   },
 ];
 
@@ -137,6 +137,25 @@ export const projects = [
     links: {
       github: 'https://github.com/hassanhosein786/banking-system',
       docs: 'https://github.com/hassanhosein786/banking-system#readme',
+    },
+  },
+  {
+    title: 'Predictive Maintenance System',
+    subtitle: 'Full-Stack Industrial Monitoring and ML Demo',
+    description:
+      'Built an end-to-end predictive maintenance system for industrial equipment scenarios, combining simulated sensor telemetry, a Node.js API, MongoDB persistence, a Python ML service, and a React dashboard. The project focuses on turning streaming equipment data into actionable health status, alerts, and failure-risk insight.',
+    features: [
+      'Simulated sensor streams for temperature, pressure, vibration, and humidity with degradation patterns before failure',
+      'React dashboard with live charts, equipment health status, alerts, and failure probability views',
+      'Node.js backend for sensor ingestion, data retrieval, and prediction request orchestration',
+      'Python ML service using a Random Forest model for predictive failure analysis',
+      'Docker Compose support for running the full multi-service stack locally',
+    ],
+    tech: ['React', 'Vite', 'Tailwind CSS', 'Node.js', 'MongoDB', 'Python', 'FastAPI', 'scikit-learn', 'Docker'],
+    featured: false,
+    links: {
+      github: 'https://github.com/hassanhosein786/maintenance-system',
+      docs: 'https://github.com/hassanhosein786/maintenance-system#readme',
     },
   },
   {
