@@ -64,7 +64,7 @@ export const skillGroups = [
 
 export const experience = [
   {
-    role: 'IT Programmer I',
+    role: 'IT Programmer II',
     company: 'Pennacool.com Caribbean Limited',
     location: 'Trinidad & Tobago',
     period: 'Jan 2026 - Present',
